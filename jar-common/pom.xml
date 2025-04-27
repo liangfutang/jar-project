@@ -87,7 +87,7 @@
     </dependencies>
 
     <build>
-        <finalName>edu-common</finalName>
+        <finalName>jar-common</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
