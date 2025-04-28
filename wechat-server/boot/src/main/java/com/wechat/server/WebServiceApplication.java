@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @author tlf
  */
 @EnableScheduling
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.project.framework.redis"})
 @EnableAsync
 public class WebServiceApplication {
 
