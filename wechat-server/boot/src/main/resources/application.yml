@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /edu-platform
+    context-path: /wechat-service
   port: 8080
   tomcat:
     uri-encoding: UTF-8
@@ -9,7 +9,7 @@ spring:
   profiles:
     active: ${ACTIVE:dev}
   application:
-    name: edu-platform
+    name: wechat-service
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai

@@ -28,6 +28,11 @@
                 <artifactId>project-common</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+            <dependency>
+                <groupId>com.project.framework</groupId>
+                <artifactId>project-redis</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
             <!--   服务内部依赖模块     -->
             <dependency>
                 <artifactId>api</artifactId>

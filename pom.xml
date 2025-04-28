@@ -35,12 +35,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--    应用内部的模块    -->
-            <dependency>
-                <groupId>com.project.framework</groupId>
-                <artifactId>project-redis</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
             <!--     外部依赖       -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -158,4 +152,37 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2260351-release-fLbuq4/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2260351-snapshot-RwCbZQ/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2260351-release-fLbuq4/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2260351-snapshot-RwCbZQ/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
