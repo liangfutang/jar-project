@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <contextName>edu-platform</contextName>
+    <property name="LOG_PATH" value="${LOG_APP:-logs}"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}--[%thread]--%level--[%c:%L]--traceId:[%X{traceId}]--%msg%n
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${LOG_PATH}/info.edu-platform.%d{yyyy-MM-ddHH}.%i.log
+            </fileNamePattern>
+            <MaxHistory>5</MaxHistory>
+            <MaxFileSize>50MB</MaxFileSize>
+            <TotalSizeCap>250MB</TotalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}--[%thread]--%level--[%c:%L]--traceId:[%X{traceId}]--%msg%n
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <appender name="rollingFileAsync" class="ch.qos.logback.classic.AsyncAppender">
+        <queueSize>1024</queueSize>
+        <appender-ref ref="rollingFile"/>
+    </appender>
+
+<!--    <springProfile name="prod">-->
+<!--        <root level="info">-->
+<!--            <appender-ref ref="rollingFileAsync"/>-->
+<!--        </root>-->
+<!--    </springProfile>-->
+<!--    <springProfile name="dev,test">-->
+<!--        <root level="info">-->
+<!--            <appender-ref ref="STDOUT"/>-->
+<!--        </root>-->
+<!--    </springProfile>-->
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
