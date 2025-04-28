@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @author tlf
  */
 @Configuration
-@MapperScan(value = "com.edu.platform.mapper")
+@MapperScan(value = "com.wechat.server.mapper")
 public class MybatisConfig {
 
     /**
