@@ -9,7 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>project-redis</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <description>整合redis</description>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>
