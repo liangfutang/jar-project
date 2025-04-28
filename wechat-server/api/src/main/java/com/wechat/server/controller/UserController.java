@@ -1,10 +1,10 @@
 package com.wechat.server.controller;
 
-import com.edu.common.result.Result;
-import com.edu.common.result.Results;
-import com.edu.common.utils.ParamValidateUtil;
+import com.project.framework.common.result.Result;
+import com.project.framework.common.result.Results;
+import com.project.framework.common.utils.ParamValidateUtil;
 import com.wechat.server.model.dto.UserDTO;
-import com.edu.platform.service.UserService;
+import com.wechat.server.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

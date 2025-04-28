@@ -2,8 +2,8 @@ package com.wechat.server.config.web;
 
 import cn.dev33.satoken.jwt.StpLogicJwtForStateless;
 import cn.dev33.satoken.stp.StpLogic;
-import com.edu.platform.auth.TokenService;
-import com.edu.platform.config.filters.AuthFilter;
+import com.wechat.server.auth.TokenService;
+import com.wechat.server.config.filters.AuthFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

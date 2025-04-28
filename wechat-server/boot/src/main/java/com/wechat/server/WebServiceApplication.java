@@ -11,9 +11,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication
 @EnableAsync
-public class EduPlatformApplication {
+public class WebServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EduPlatformApplication.class, args);
+        SpringApplication.run(WebServiceApplication.class, args);
     }
 }

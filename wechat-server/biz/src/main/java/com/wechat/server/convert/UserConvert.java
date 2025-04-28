@@ -1,6 +1,6 @@
 package com.wechat.server.convert;
 
-import com.edu.platform.model.UserDO;
+import com.wechat.server.model.UserDO;
 import com.wechat.server.model.dto.UserDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

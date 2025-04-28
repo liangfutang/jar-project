@@ -1,9 +1,9 @@
 package com.wechat.server.config.web;
 
-import com.edu.common.code.ResultCodeEnum;
-import com.edu.common.result.Result;
-import com.edu.common.result.Results;
 import com.mysql.cj.jdbc.exceptions.CommunicationsException;
+import com.project.framework.common.code.ResultCodeEnum;
+import com.project.framework.common.result.Result;
+import com.project.framework.common.result.Results;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,7 +1,7 @@
 package com.wechat.server.auth.impl;
 
 import cn.dev33.satoken.secure.BCrypt;
-import com.edu.platform.auth.PasswordEncoder;
+import com.wechat.server.auth.PasswordEncoder;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 

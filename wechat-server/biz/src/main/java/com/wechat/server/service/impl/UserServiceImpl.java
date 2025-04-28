@@ -1,14 +1,14 @@
 package com.wechat.server.service.impl;
 
-import com.edu.common.utils.HttpRequestUtil;
-import com.edu.framework.redis.facade.RedisFacade;
-import com.edu.platform.auth.PasswordEncoder;
-import com.edu.platform.convert.UserConvert;
-import com.edu.platform.mapper.UserMapper;
-import com.edu.platform.model.UserDO;
+import com.project.framework.common.utils.HttpRequestUtil;
+import com.project.framework.redis.facade.RedisFacade;
+import com.wechat.server.auth.PasswordEncoder;
+import com.wechat.server.convert.UserConvert;
+import com.wechat.server.mapper.UserMapper;
+import com.wechat.server.model.UserDO;
 import com.wechat.server.model.dto.UserDTO;
-import com.edu.platform.param.UserParam;
-import com.edu.platform.service.UserService;
+import com.wechat.server.param.UserParam;
+import com.wechat.server.service.UserService;
 import com.wechat.server.utils.PhoneCheckUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

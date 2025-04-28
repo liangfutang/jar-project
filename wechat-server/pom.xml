@@ -21,32 +21,39 @@
         <module>infrastructure</module>
     </modules>
 
-    <dependencies>
-        <!--   服务内部依赖模块     -->
-        <dependency>
-            <artifactId>api</artifactId>
-            <groupId>com.jar.project</groupId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <artifactId>biz</artifactId>
-            <groupId>com.jar.project</groupId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <artifactId>boot</artifactId>
-            <groupId>com.jar.project</groupId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <artifactId>common</artifactId>
-            <groupId>com.jar.project</groupId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <artifactId>infrastructure</artifactId>
-            <groupId>com.jar.project</groupId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.project.framework</groupId>
+                <artifactId>project-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <!--   服务内部依赖模块     -->
+            <dependency>
+                <artifactId>api</artifactId>
+                <groupId>com.jar.project</groupId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <artifactId>biz</artifactId>
+                <groupId>com.jar.project</groupId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <artifactId>boot</artifactId>
+                <groupId>com.jar.project</groupId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <artifactId>common</artifactId>
+                <groupId>com.jar.project</groupId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <artifactId>infrastructure</artifactId>
+                <groupId>com.jar.project</groupId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

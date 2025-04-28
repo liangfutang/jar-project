@@ -1,6 +1,6 @@
 package com.wechat.server.model.query;
 
-import com.edu.common.param.BaseQuery;
+import com.project.framework.common.param.BaseQuery;
 import lombok.Data;
 
 @Data

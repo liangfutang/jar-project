@@ -1,11 +1,11 @@
 package com.wechat.server.controller;
 
-import com.edu.common.enums.AppIdEnum;
-import com.edu.common.result.Result;
-import com.edu.common.result.Results;
-import com.edu.common.utils.HttpRequestUtil;
-import com.edu.common.utils.ParamValidateUtil;
-import com.edu.platform.auth.LoginService;
+import com.project.framework.common.enums.AppIdEnum;
+import com.project.framework.common.result.Result;
+import com.project.framework.common.result.Results;
+import com.project.framework.common.utils.HttpRequestUtil;
+import com.project.framework.common.utils.ParamValidateUtil;
+import com.wechat.server.auth.LoginService;
 import com.wechat.server.model.param.UserApiParam;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

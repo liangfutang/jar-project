@@ -1,11 +1,11 @@
 package com.wechat.server.config.filters;
 
-import com.edu.common.constant.Constant;
-import com.edu.common.enums.AppIdEnum;
-import com.edu.common.exception.NoLoginException;
-import com.edu.common.utils.HttpRequestUtil;
-import com.edu.platform.auth.TokenService;
-import com.edu.platform.config.filters.wrapper.CustomRequestWrapper;
+import com.project.framework.common.constant.Constant;
+import com.project.framework.common.enums.AppIdEnum;
+import com.project.framework.common.exception.NoLoginException;
+import com.project.framework.common.utils.HttpRequestUtil;
+import com.wechat.server.auth.TokenService;
+import com.wechat.server.config.filters.wrapper.CustomRequestWrapper;
 import com.wechat.server.contents.AccountContent;
 import com.wechat.server.model.dto.UserDTO;
 import org.apache.commons.lang3.StringUtils;

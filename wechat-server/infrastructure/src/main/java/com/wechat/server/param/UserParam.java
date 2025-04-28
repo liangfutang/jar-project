@@ -1,6 +1,6 @@
 package com.wechat.server.param;
 
-import com.edu.common.param.BaseParam;
+import com.project.framework.common.param.BaseParam;
 import lombok.Data;
 
 @Data
