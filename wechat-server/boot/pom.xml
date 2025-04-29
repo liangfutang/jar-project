@@ -24,14 +24,14 @@
     </dependencies>
 
     <build>
-        <finalName>edu-platform</finalName>
+        <finalName>wechat-server</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.edu.platform.EduPlatformApplication</mainClass>
+                    <mainClass>com.wechat.server.WebServiceApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

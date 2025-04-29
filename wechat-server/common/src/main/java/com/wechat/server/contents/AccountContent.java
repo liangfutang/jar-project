@@ -13,7 +13,7 @@ public interface AccountContent {
      * 不需要鉴权的路由
      */
     List<String> SKIP_AUTH_URI = Arrays.asList(
-            "/edu-platform/login/simple",
+            "/wechat-service/login/simple",
             ""
     );
 
